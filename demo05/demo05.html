@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo05</title>
+	<style>
+		/*css 重置*/
+		html,body,p,h1,h2,h3,ul,li,ol{
+			margin: 0;
+			padding:0;
+			list-style: none;
+		}
+		
+		div{
+			border: 1px solid #000;
+			margin-bottom:10px;
+		}
+		.container{
+			width: 960px;
+			margin:0 auto;
+			margin-bottom: 0;
+			border: none;
+		}
+		
+		.header,.nav,.footer{
+
+			height:100px;
+		}
+		.nav{
+			height:50px;
+		}
+		.aside,.article{
+			height: 500px;
+		}
+
+		.aside{
+			width:300px;
+			float: left; 
+		}
+		.article{
+			width:650px;
+			float: right;
+		}
+		.footer{
+			clear: both;
+			margin-bottom: 0;	
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">header</div>
+		<div class="nav">nav</div>
+		<div class="aside">aside</div>
+		<div class="article">article</div>
+		<div class="footer">footer</div>
+	</div>
+</body>
+</html>
