@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Album</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="Album.css">
+</head>
+<body>
+<header>
+
+</header>
+<nav>
+	<ul>
+		<li><a href="#">HOME</a></li>
+		<li><a href="#">ABLUM</a></li>
+		<li><a href="#">ABOUT</a></li>
+		<li><a href="#">MANAGE</a></li>
+	</ul>
+</nav>
+<section>
+	<aside>
+		<ul>
+			<li><a href="#">My Ablum<span>go&gt;</span></a></li>
+			<li><a href="#">Download<span>go&gt;</span></a></li>
+			<li><a href="#">Interest<span>go&gt;</span></a></li>
+			<li><a href="#">Collect<span>go&gt;</span></a></li>
+		</ul>
+	</aside>
+	<div id="main">
+		<ul class="image_list">
+			<li>
+				<img src="images/image1.jpg">
+				<p>第1张图片</p>
+			</li>
+			<li>
+				<img src="images/image2.jpg">
+				<p>第2张图片</p>
+			</li>
+			<li>
+				<img src="images/image3.jpg">
+				<p>第3张图片</p>
+			</li>
+			<li>
+				<img src="images/image4.jpg">
+				<p>第4张图片</p>
+			</li>
+			<li>
+				<img src="images/image5.jpg">
+				<p>第5张图片</p>
+			</li>
+			<li>
+				<img src="images/image6.jpg">
+				<p>第6张图片</p>
+			</li>
+			<li>
+				<img src="images/image7.jpg">
+				<p>第7张图片</p>
+			</li>
+		</ul>
+		<ul class="image_list">
+			<li>
+				<img src="images/image8.jpg">
+				<p>第8张图片</p>
+			</li>
+			<li>
+				<img src="images/image9.jpg">
+				<p>第9张图片</p>
+			</li>
+			<li>
+				<img src="images/image10.jpg">
+				<p>第10张图片</p>
+			</li>
+			<li>
+				<img src="images/image11.jpg">
+				<p>第11张图片</p>
+			</li>
+			<li>
+				<img src="images/image12.jpg">
+				<p>第12张图片</p>
+			</li>
+			<li>
+				<img src="images/image13.jpg">
+				<p>第13张图片</p>
+			</li>
+			<li>
+				<img src="images/image14.jpg">
+				<p>第14张图片</p>
+			</li>
+		</ul>
+		<ul class="image_list">
+			<li>
+				<img src="images/image15.jpg">
+				<p>第15张图片</p>
+			</li>
+			<li>
+				<img src="images/image16.jpg">
+				<p>第16张图片</p>
+			</li>
+			<li>
+				<img src="images/image17.jpg">
+				<p>第17张图片</p>
+			</li>
+			<li>
+				<img src="images/image18.jpg">
+				<p>第18张图片</p>
+			</li>
+			<li>
+				<img src="images/image19.jpg">
+				<p>第19张图片</p>
+			</li>
+			<li>
+				<img src="images/image20.jpg">
+				<p>第20张图片</p>
+			</li>
+			<li>
+				<img src="images/image21.jpg">
+				<p>第21张图片</p>
+			</li>
+		</ul>
+		<div class="clear"></div>
+	</div>
+	<div class="clear"></div>
+</section>
+<footer>
+</footer>
+<div id="cover">
+</div>
+
+<div id="show">
+	<p onclick="closeCover();">x</p>
+	<img src="">
+</div>
+<script>
+window.onload=setFunction();
+function setFunction(){
+	var my_img=document.getElementById("main").getElementsByTagName("img");
+	for(var i=0;i<my_img.length;i++){
+		my_img[i].onclick=function(){
+			return !showImage(this.src);
+		}
+	}
+}
+function showImage(img_src){
+	document.getElementById("cover").style.display="block";
+	var a=document.getElementById("show");
+	a.style.display="block";
+	var img_show=a.getElementsByTagName("img");
+	img_show[0].src=img_src;
+	return true;
+}
+function closeCover(){
+	document.getElementById("cover").style.display="none";
+	document.getElementById("show").style.display="none";
+}
+</script>
+</body>
+</html>
