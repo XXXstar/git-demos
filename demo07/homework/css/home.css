@@ -1,0 +1,72 @@
+html,body,h1,h2,h3,h4,h5,h6,ul,li,ol,dd,dt,dl,p{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+body{
+	font-size: 14px;
+	//font-family: "microsoft yahei"
+}
+/*通用样式*/
+.lf{float:left;}
+.rt{float:right;}
+.clear{clear: both;}
+
+.layout{
+	margin:0 auto;
+	width: 1000px;
+}
+
+a{
+	text-decoration: none;
+	color: #666;
+}
+/*header*/
+.header{
+	height:50px;
+	border:1px solid #ccc;
+}
+
+.header li{
+	float: left;
+	padding: 0 10px;
+	position: relative;
+}
+.header a{
+	line-height: 50px;
+}
+
+.header a:hover{
+	color: #333;
+}
+
+.pop_box{
+	border:1px solid #ccc;
+}
+.pop_box li{
+	width:50px;
+	float:none;
+	text-align: center;
+
+}
+
+.pop_box li a{
+	line-height:35px;
+}
+.pop_box{
+	display:none;
+	position: absolute;
+	left:50%;
+	top:100%;
+	margin-left:-36px;
+}
+
+.show:hover .pop_box{
+	display:block;
+
+}
+
+.pop_box li:hover{
+	background-color: #efefef
+}
